@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앱 다운로드 | Landing Page</title>
+    <!-- Tailwind CSS CDN 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 기본 글꼴을 Inter로 설정 (Tailwind 기본 설정 사용) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* 다크 모드 배경 */
+            color: #e6edf3; /* 밝은 텍스트 색상 */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <!-- 메인 컨테이너 -->
+    <div class="w-full max-w-xl text-center">
+
+        <!-- 로고/앱 이름 영역 -->
+        <header class="mb-12">
+            <h1 class="text-5xl font-extrabold mb-4 tracking-tight">
+                <span class="text-blue-400">AI</span> Dairy
+            </h1>
+            <p class="text-xl text-gray-400">
+                매일 나의 일상을 기록합니다, 예쁘게.
+            </p>
+            <p class="text-xl text-gray-400">
+                매일 나의 일상을 기록합니다, 편하게.
+            </p>
+            <p class="text-xl text-gray-400 mb-8">
+                매일 나의 일상을 기록합니다, 예쁘고 편하게 AI가 알아서.
+            </p>
+        </header>
+        
+        <!-- 앱 스크린샷 이미지 영역 추가 -->
+        <div class="mb-12 px-2">
+            <img src="https://placehold.co/600x350/1f2937/d1d5db?text=AI+Dairy+App+Screenshot"
+                 alt="AI Dairy 앱 스크린샷 미리보기"
+                 class="w-full h-auto rounded-xl shadow-2xl border border-gray-700 mx-auto object-cover max-h-96"
+                 onerror="this.onerror=null; this.src='https://placehold.co/600x350/1f2937/d1d5db?text=Image+Load+Error';">
+            <p class="mt-4 text-sm text-gray-500">
+                AI가 정리해주는 일기장 화면 (여기에 실제 앱 스크린샷 링크를 넣어주세요.)
+            </p>
+        </div>
+
+
+        <!-- 버튼 영역 -->
+        <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 justify-center">
+
+            <!-- Google Play 버튼 -->
+            <a href="[Google Play 스토어 링크]" target="_blank"
+               class="flex items-center justify-center p-3 sm:w-56 text-lg font-semibold bg-gray-800 text-white rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-[1.02] active:scale-[0.98] ring-2 ring-transparent hover:ring-blue-500">
+                <!-- Google Play 아이콘 (SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 fill-white" viewBox="0 0 24 24">
+                    <path d="M2.08 1.488L15.39 12 2.08 22.512 2.08 1.488zm15.46 0.176l4.464 2.583a1 1 0 010 1.734l-4.464 2.583L12.5 12 17.54 9.164 22 6.581a1 1 0 000-1.734L17.54 2.22A1 1 0 0017.54 1.664zM22 17.419l-4.464-2.583-4.464 2.583 4.464 2.583a1 1 0 000-1.734L22 17.419z"/>
+                </svg>
+                Google Play
+            </a>
+
+            <!-- Apple App Store 버튼 -->
+            <a href="[Apple App Store 링크]" target="_blank"
+               class="flex items-center justify-center p-3 sm:w-56 text-lg font-semibold bg-white text-gray-900 rounded-xl shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-[1.02] active:scale-[0.98] ring-2 ring-transparent hover:ring-blue-500">
+                <!-- Apple 아이콘 (SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 fill-gray-900" viewBox="0 0 24 24">
+                    <path d="M12.001 0C8.423 0 5.093 1.956 3.193 4.887A8.04 8.04 0 00.32 10.32c.16 2.053 1.077 4.09 2.59 5.867 1.467 1.72 3.32 3.013 5.38 3.82 2.06 0.806 4.29 1.153 6.474 1.06 1.833-.07 3.65-.673 5.28-1.787 1.253-.873 2.373-2.02 3.16-3.353.113-.193.22-.39.313-.593-.16-.213-.333-.427-.513-.633-.2-.233-.42-.46-.66-.673-.913-.806-1.92-1.393-2.993-1.713-1.073-.32-2.227-.373-3.34-.14-.52.113-1.04.307-1.54.587-1.36 0.76-2.913 0.953-4.46 0.58-1.547-.373-3.033-1.3-4.133-2.613-.247-.287-.473-.593-.68-.913.38-.493.813-1.027 1.28-1.573 1.34-1.587 2.873-2.82 4.607-3.667 1.734-.847 3.667-1.28 5.61-1.28a7.994 7.994 0 007.99-7.96C24 4.032 20.73 0 16.082 0 14.86 0 13.435.532 12.001 0zM17.13 2.133c0.16 0.16 0.32 0.32 0.48 0.48 1.12 1.12 1.68 2.36 1.68 3.72 0 1.36-.56 2.6-1.68 3.72-1.12 1.12-2.36 1.68-3.72 1.68-1.36 0-2.6-0.56-3.72-1.68-1.12-1.12-1.68-2.36-1.68-3.72 0-1.36 0.56-2.6 1.68-3.72 1.12-1.12 2.36-1.68 3.72-1.68 1.36 0 2.6 0.56 3.72 1.68z"/>
+                </svg>
+                Apple Store
+            </a>
+        </div>
+
+        <!-- 추가 정보 -->
+        <footer class="mt-12 text-gray-500 text-sm">
+            <p>&copy; 2025 승희네 모든 권리 보유.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
